@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
+  <listeners>
+    <listener class-name="com.listener.ListenerDemoPractice"/>
+  </listeners>
+  <test thread-count="5" name="test1(failed)">
+    <classes>
+      <class name="com.listener.Practice">
+        <methods>
+          <include name="verifyTest"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
+          <include name="verifyTitle"/>
+        </methods>
+      </class> <!-- com.listener.Practice -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [suite1] -->

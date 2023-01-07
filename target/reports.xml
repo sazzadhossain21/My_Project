@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="1" passed="0" skipped="0" total="1">
+<suite duration-ms="12505" name="io.cucumber.core.plugin.TestNGFormatter">
+<test duration-ms="12505" name="io.cucumber.core.plugin.TestNGFormatter">
+<class name="Sign In">
+<test-method duration-ms="11979" finished-at="2023-01-07T05:25:27.380Z" name="User able to Sign In with valid credential and verify the home page" started-at="2023-01-07T05:25:15.368Z" status="FAIL">
+<exception class="org.openqa.selenium.ElementClickInterceptedException">
+<message><![CDATA[Given Users can open any browser............................................passed
+And Users able to enter url as "https://www.zoopla.co.uk/"..................passed
+When Users able to click Sign In button.....................................failed
+And Users enter valid username as "hossain.smarttech2020@gmail.com" and password as "sazzad2020".skipped
+And Users click the Sign In button..........................................skipped
+Then Users can verify Sign In page..........................................skipped
+And Users can close the browser.............................................skipped
+]]></message>
+<full-stacktrace><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/signin/?page_after_login=%2F&amp;return_url=%2F&amp;with_confirmation=true" class="c-kPcuI c-kPcuI-bNuZrP-muted-true c-kPcuI-kDmApp-disableVisited-true">...</a> is not clickable at point (1345, 40). Other element would receive the click: <div id="gdpr-consent-tool-wrapper" tabindex="-1" aria-hidden="true" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(151, 137, 137, 0.5);">...</div>
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5HL70CFF', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\compu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c1d121b3ef0574497d541a52f6a793a5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.stepDef.Steps.users_able_to_click_sign_in_button(Steps.java:34)
+	at ✽.Users able to click Sign In button(file:///C:/Users/compu/eclipse-workspace/My_Project/./Features/login.feature:18)
+]]></full-stacktrace>
+</exception>
+</test-method>
+</class>
+</test>
+</suite>
+</testng-results>

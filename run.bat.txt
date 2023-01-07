@@ -1,0 +1,2 @@
+cd C:\Users\compu\eclipse-workspace\My_Project
+mvn clean install

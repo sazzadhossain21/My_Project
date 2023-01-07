@@ -1,0 +1,153 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-07T05:25:15.368Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10058000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks_Class.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User able to Sign In with valid credential and verify the home page",
+        "description": "",
+        "id": "sign-in;user-able-to-sign-in-with-valid-credential-and-verify-the-home-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 713000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks_Class.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Users can open any browser",
+            "match": {
+              "location": "com.stepDef.Steps.users_can_open_any_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Users able to enter url as \"https://www.zoopla.co.uk/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.zoopla.co.uk/\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.stepDef.Steps.users_able_to_enter_url_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"/signin/?page_after_login\u003d%2F\u0026amp;return_url\u003d%2F\u0026amp;with_confirmation\u003dtrue\" class\u003d\"c-kPcuI c-kPcuI-bNuZrP-muted-true c-kPcuI-kDmApp-disableVisited-true\"\u003e...\u003c/a\u003e is not clickable at point (1345, 40). Other element would receive the click: \u003cdiv id\u003d\"gdpr-consent-tool-wrapper\" tabindex\u003d\"-1\" aria-hidden\u003d\"true\" style\u003d\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(151, 137, 137, 0.5);\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-5HL70CFF\u0027, ip: \u0027192.168.0.15\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\compu\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c1d121b3ef0574497d541a52f6a793a5\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat com.stepDef.Steps.users_able_to_click_sign_in_button(Steps.java:34)\r\n\tat ✽.Users able to click Sign In button(file:///C:/Users/compu/eclipse-workspace/My_Project/./Features/login.feature:18)\r\n",
+              "duration": 1168000000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "Users able to click Sign In button",
+            "match": {
+              "location": "com.stepDef.Steps.users_able_to_click_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Users enter valid username as \"hossain.smarttech2020@gmail.com\" and password as \"sazzad2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hossain.smarttech2020@gmail.com\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"sazzad2020\"",
+                  "offset": 80
+                }
+              ],
+              "location": "com.stepDef.Steps.users_enter_valid_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Users click the Sign In button",
+            "match": {
+              "location": "com.stepDef.Steps.users_click_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Users can verify Sign In page",
+            "match": {
+              "location": "com.stepDef.Steps.users_can_verify_sign_in_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Users can close the browser",
+            "match": {
+              "location": "com.stepDef.Steps.users_can_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TS_002"
+          },
+          {
+            "name": "@NegativeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Sign In",
+    "description": "",
+    "id": "sign-in",
+    "keyword": "Feature",
+    "uri": "file:Features/login.feature",
+    "tags": []
+  }
+]

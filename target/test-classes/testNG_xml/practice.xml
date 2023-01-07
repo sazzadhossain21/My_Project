@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite1">
+	<listeners>
+		<listener class-name="com.listener.TestListenerClass" />
+	</listeners>
+	<test name="test1">
+		<classes>
+			<class name="com.practice.ClassA" />
+			<class name="com.practice.ClassB">
+				<methods>
+					<exclude name="getPractice" />
+					<include name="get.*" /> <!--.* include all method which one has get -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
